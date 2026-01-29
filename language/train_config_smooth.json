@@ -1,0 +1,27 @@
+{
+    "exp_name": "language_smooth300ep_k2_50token",
+    "time_zone": "America/Edmonton",
+    "seed": 10,
+    "log_root_dir": "log/",
+    "model_name": "t5-small",
+    "optimizer": {
+        "learning_rate": 1e-4,
+        "weight_decay": 0,
+        "amsgrad": true
+    },
+    "loss": "cross_entropy_loss",
+    "num_tasks": 100,
+    "baseline": "",
+    "trainer": {
+        "max_epochs": 300,
+        "batch_size": 64,
+        "shuffle": true
+    },
+    "smoothing": {
+        "k": 2,
+        "smooth_inc": 0.02
+    },
+    "save_models": true,
+    "fp16": false,
+    "resume_path": ""
+}

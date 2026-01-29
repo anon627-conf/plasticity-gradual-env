@@ -1,0 +1,23 @@
+{
+    "exp_name": "language_cipher_permute_smooth",
+    "time_zone": "America/Edmonton",
+    "seed": 300,
+    "log_root_dir": "log/",
+    "model_name": "t5-small",
+    "optimizer": {
+        "learning_rate": 1e-3,
+        "weight_decay": 0,
+        "amsgrad": true
+    },
+    "loss": "cross_entropy_loss",
+    "num_tasks": 100,
+    "baseline": "",
+    "trainer": {
+        "max_epochs": 100,
+        "batch_size": 64,
+        "shuffle": true
+    },
+    "save_models": true,
+    "fp16": false,
+    "resume_path": ""
+}
