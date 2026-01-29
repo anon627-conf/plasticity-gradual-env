@@ -2,6 +2,7 @@
 
 ## How to run the experiments?
 `--config`: path to the config files containing basic hyperparameters such as learning rate
+
 `--smooth`: boolean operator determining whether to run with Task Sampling
 
 ### Random Seq2seq
