@@ -107,11 +107,14 @@ class Trainer():
         resume_path = config["resume_path"]
         self.exp_name = config['exp_name']
         self.num_tasks = config['num_tasks']
-        # self.sent_len=50
-        self.sent_len=10
-        self.word_len=5
-        # self.data_size=5120
-        self.data_size=1280
+        if 'cipher' in self.exp_name:
+            self.sent_len=10
+            self.word_len=5
+            self.data_size=1280
+        else:
+            self.sent_len=50
+            self.word_len=5
+            self.data_size=5120
 
         if resume_path:
             ckpt = torch.load(PosixPath(resume_path, 'last_checkpoint.pt'))
