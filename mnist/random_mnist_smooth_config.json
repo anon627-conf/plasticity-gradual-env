@@ -1,0 +1,20 @@
+{
+    "num_tasks": 100,
+    "num_classes":10,
+    "epochs_per_task":80,
+    "samples_per_class":512,
+    "batch_size":64,
+    "samples_per_class_test":1,
+    "dataset": "MNIST",
+    "lr": 1e-3,
+    "save_models":true,
+    "wandb":false,
+    "model_name":"mlp",
+    "exp_name":"gradual_soft_label_mnist_k2_2",
+    "svd_init":false,
+    "seed":900,
+    "from_checkpoint":"",
+    "timezone":"'America/Edmonton'",
+    "smooth_inc": 0.5,
+    "k": 2
+}

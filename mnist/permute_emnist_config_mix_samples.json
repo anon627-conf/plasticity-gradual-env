@@ -1,0 +1,21 @@
+{
+    "num_tasks": 100,
+    "num_classes":47,
+    "epochs_per_task":100,
+    "samples_per_class":2000,
+    "samples_per_class_test":200,
+    "batch_size":400,
+    "lr": 1e-3,
+    "save_models":true,
+    "wandb":false,
+    "exp_name":"permute_emnist_mix_samples",
+    "dataset": "EMNIST",
+    "model_name":"mlp",
+    "baseline":"",
+    "svd_init":false,
+    "seed":800,
+    "from_checkpoint":"",
+    "timezone":"America/Edmonton",
+    "smooth_inc": 0.05,
+    "k": 1
+}
