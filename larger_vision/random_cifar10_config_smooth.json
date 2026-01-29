@@ -1,0 +1,18 @@
+{
+    "num_tasks": 100,
+    "num_classes":10,
+    "epochs_per_task":40,
+    "samples_per_class":5000,
+    "samples_per_class_test":10,
+    "batch_size":250,
+    "lr": 1e-4,
+    "save_models":true,
+    "wandb":false,
+    "exp_name":"gradual_soft_label",
+    "svd_init":false,
+    "seed":984,
+    "from_checkpoint":"",
+    "timezone":"America/Edmonton",
+    "smooth_inc": 0.05,
+    "k": 2
+}

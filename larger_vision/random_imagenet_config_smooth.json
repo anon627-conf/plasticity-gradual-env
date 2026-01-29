@@ -1,0 +1,21 @@
+{
+    "num_tasks": 100,
+    "num_classes":200,
+    "epochs_per_task":40,
+    "samples_per_class":500,
+    "samples_per_class_test":50,
+    "batch_size":250,
+    "lr": 1e-4,
+    "model_name": "microsoft/resnet-18",
+    "dataset": "tiny-imagenet",
+    "baseline": "",
+    "save_models":true,
+    "wandb":false,
+    "exp_name":"gradual_soft_label_tiny_imagenet",
+    "svd_init":false,
+    "seed":900,
+    "from_checkpoint":"",
+    "timezone":"'America/Edmonton'",
+    "smooth_inc": 0.05,
+    "k": 2
+}

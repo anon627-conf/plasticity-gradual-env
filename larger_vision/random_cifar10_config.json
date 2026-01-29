@@ -1,0 +1,19 @@
+{
+    "num_tasks": 100,
+    "num_classes":10,
+    "epochs_per_task":120,
+    "samples_per_class":5000,
+    "samples_per_class_test":10,
+    "batch_size":250,
+    "lr": 1e-4,
+    "model_name": "microsoft/resnet-18",
+    "dataset": "cifar10",
+    "baseline":"shrink_perturb",
+    "save_models":true,
+    "wandb":false,
+    "exp_name":"shrink_cifar10",
+    "svd_init":false,
+    "seed":983,
+    "from_checkpoint":"saved_experiments/shrink_cifar10_shrink_perturb_2025-07-17_08:36:50/task11.pt",
+    "timezone":"'America/Edmonton'"
+}
