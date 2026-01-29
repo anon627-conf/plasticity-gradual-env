@@ -34,6 +34,9 @@ ReDO
 `python baselines.py --config train_config.json --baseline redo`
 
 ### Bigram Cipher
+
+Note that the keyword `'cipher'` must be included in the `'exp_name'` in the config files to run this task.
+
 **Unregularized**
 
 `python trainer.py --config train_config_cipher.json`
